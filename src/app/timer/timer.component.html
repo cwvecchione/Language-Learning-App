@@ -1,0 +1,12 @@
+<div class="d-flex flex-row justify-content-between">
+  <div class="progress w-100">
+    <div class="progress-bar bg-success"
+      role="progressbar"
+      [attr.aria-valuenow]="gameService.getTimeLeftPercent()"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      style="width: {{gameService.getTimeLeftPercent()}}%;"
+    ></div>
+  </div>
+  <fa-icon icon="trophy" class="trophy"></fa-icon>
+</div>
